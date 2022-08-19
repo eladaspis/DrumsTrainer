@@ -1,0 +1,7 @@
+%%staves (Stickings Hands)
+M:4/4
+V:Stickings
+"R"x"R"x"L"x"L"x "R"x"R"x"L"x"L"x | "R"x"R"x"L"x"L"x "R"x"R"x"L"x"L"x ||
+V:Hands stem=up
+%%voicemap drum
+cccc cccc | cccc cccc ||

@@ -1,0 +1,7 @@
+%%staves (Stickings Hands)
+K:C clef=perc
+V:Stickings
+"R"x"L"x"R"x"L"x "R"x"L"x"R"x"L"x | "R"x"L"x"R"x"L"x "R"x"L"x"R"x"L"x ||
+V:Hands stem=up
+%%voicemap drum
+cccc cccc | cccc cccc ||

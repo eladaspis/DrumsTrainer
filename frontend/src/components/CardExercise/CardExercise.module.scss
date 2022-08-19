@@ -1,0 +1,219 @@
+// $blue: #341cac;
+
+// body, html {
+//   font-family: 'Montserrat', sans-serif;
+//   background-color: $blue;
+// }
+
+// .card {
+//   width:280px;
+//   display: block;
+//   margin: 60px auto;
+//   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
+//   transition: .25s;
+  
+//   &:hover {
+//     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
+//     cursor: pointer;
+    
+//     .button-primary {
+//       transform: translate(10px, 0);
+//     }
+//   }
+// }
+
+// .cardHeader {
+//   height: 150px;
+//   width: 100%;
+//   padding: 15px;
+//   width:100%;
+//   background-size:cover;
+//   color:#fff;
+// }
+
+// .cardHeaderTitle {
+//   text-transform: uppercase;
+//   margin: 0;
+// }
+
+// .cardBody {
+//   padding: 15px;
+//   background-color:#fff;
+//   width:100%;
+// }
+
+// .date {
+//   font-size: 11px;
+//   font-weight: 600;
+//   color: grey;
+// }
+
+// .bodyContent {
+//   padding-bottom: 40px;
+//   font-size: 13px;
+//   line-height: 1.8;
+// }
+
+// .buttonPrimary {
+//   border: none;
+//   box-shadow: none;
+//   font-family: inherit;
+//   background-color:transparent;
+//   color: $blue;
+//   font-size: 15px;
+//   transition:.25s;
+  
+//   i{
+//     padding-right:4px;
+//   }
+// }
+
+
+// .designerLink {
+//   color:#fff;
+//   text-align:center;
+//   fon-size: 12px;
+//   text-decoration: none;
+//   display:block;
+// }
+
+
+
+
+
+
+//fonts
+
+@font-face {
+  font-family: 'bold';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'light';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-light-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-medium-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-medium-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'semibold';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+// body {
+// font-family: 'regular', sans-serif;
+// background-color:#f9f9f9;
+// padding: 40px;
+// font-size: 16px;
+// -webkit-font-smoothing: antialiased;
+// }
+
+// p {
+// font-size: 15px;
+// font-weight: 400;
+// font-family: 'light', sans-serif;
+// }
+
+.button {
+border: none;
+background:transparent;
+box-shadow:none;
+font-size: inherit;
+font-family: inherit;
+}
+
+// Header
+
+.card {
+width:330px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+box-shadow: 0px 3px 25px 0px rgba(0,0,0,.1);
+border-radius: 3px;
+
+&:hover {
+  .buttonMore {
+    opacity: 1;
+    transform: translate(-50%, -55%);
+  }
+}
+}
+
+$ch : 'cardHeader';
+
+.#{$ch} {
+  height: auto;
+  width: 100%;
+  position:relative;
+  border-radius: 3px 3px 0px 0px;
+  overflow:hidden;
+
+  .buttonMore {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 9px 24px;
+    opacity: 0;
+    transition: .25s;
+  }
+}
+
+
+.#{$ch}Image {
+max-width:100%;
+}
+
+.cardBody {
+min-height: 140px;
+background-color:#fff;
+margin-top:-0px;
+border-radius: 0px 0px 3px 3px;
+padding: 30px 30px 40px 30px;
+position: relative;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+
+  p {
+    line-height: 1.55;
+  }
+
+}
+
